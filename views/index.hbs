@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="games/vaderzhp/js/phaser.min.js"></script>
+  <script src="games/vaderzhp/js/main.js"></script>
+  <script src="games/vaderzhp/js/start.js"></script>
+  <script src="games/vaderzhp/js/menu.js"></script>
+  <script src="games/vaderzhp/js/game.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <br>
+    <div class="row">
+    <div class="jumbotron col-sm-12">
+  <div class="header-box"><h1>{{title}}</h1></div>
+  <div class="header-box"><img src="/images/gamepad-black.png"></div>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+  <ul>
+    <a href="/"><li>{{home}}</li>
+    <a href="/tutorials"><li>{{tutorials}}</li></a>
+    <a href="/games"><li>{{ games }}</li></a>
+    <a href="/about"><li>{{ about }}</li></a>
+  </ul>
+</div>
+</div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12">
+<div class="boxes">
+
+<p>{{ intro }}</p>
+
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+  <div class="col-sm-12">
+<div id="game" class="boxes">
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+<div class="footer boxes col-sm-12">
+  <p><b>{{name}}</b></p>
+</div>
+</div>
+<br>
+</div>
+<script>
+var game = new Phaser.Game(800, 600, Phaser.AUTO, "game");
+var cursor;
+var bullet;
+var bullets;
+var bulletTime = 0;
+var shootButton;
+var ufo;
+var para;
+var lightningship;
+var chose;
+var enemies;
+var e;
+var time_traveled = 3000;
+var enemyBullets;
+var firingTimer = 0;
+var livingEnemies = [];
+var asteroid;
+var asteroidgroup;
+var score;
+var lives;
+var shiplife = 3;
+var exploding_ship;
+var score_text;
+var background;
+var restartB;
+var flag = true;
+var flag_text;
+var sound_text;
+var music;
+var button;
+var ship;
+
+var style =  { font: "42px Audiowide", fill: "#ff0044", align: "center" };
+game.state.add("Start", Start);
+game.state.add("Menu", Menu);
+game.state.add("Game", Game);
+game.state.start("Start");
+
+</script>
+</body>
+</html>

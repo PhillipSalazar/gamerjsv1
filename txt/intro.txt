@@ -1,0 +1,3 @@
+GamerJS a place to learn HTML5 game development.
+This whole place is dedicated to JavaScript development
+and HTML5 game development!!!!!!

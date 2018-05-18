@@ -1,0 +1,46 @@
+body {
+  background-color: #ff9933;
+}
+
+h1 {
+  margin-top: 2%;
+}
+
+.boxes {
+  background-color: #e6e6e6;
+  border: 2px solid none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#game {
+  width: 830px;
+  margin-left: 10%;
+}
+
+li {
+  display: inline-block;
+  margin-left: 15%;
+  color:  black;
+}
+
+a li:hover {
+  color: white;
+  text-shadow: 0px 0px 10px white;
+}
+
+.header-box {
+    float: left;
+    margin-left: 25%;
+}
+
+.header-box h1 {
+  /*margin-top: -5%;*/
+  margin-left: 5%;
+}
+
+.header-box img {
+  width: 150px;
+  margin-left: 5%;
+  /*margin-top: -15%; */
+}
